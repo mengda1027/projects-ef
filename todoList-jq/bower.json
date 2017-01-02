@@ -1,0 +1,21 @@
+{
+  "name": "todoList",
+  "authors": [
+    "mengda <mengda1027@qq.com>"
+  ],
+  "description": "A todoList app based jQuery",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "datetimepicker": "^2.5.4"
+  }
+}

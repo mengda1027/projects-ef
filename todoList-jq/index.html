@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Todo App</title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="bower_components/datetimepicker/build/jquery.datetimepicker.min.css">
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="msg">
+                <span class="info">lalalla</span>
+                <button>知道了</button>
+            </div>
+            <h1>我的Todo</h1>
+            <form action="#" class="add-task">
+                <input type="text" name="content" autofocus autocomplete="off" placeholder="e.g. 下午记得买菜">
+                <button type="submit">submit</button>
+            </form>
+            <div class="task-list">
+                <!--<div class="task-item">-->
+                    <!--<span><input type="checkbox"></span>-->
+                    <!--<span class="task-content">item 1 content</span>-->
+                    <!--<span class="action">-->
+                        <!--<span class="del">删除</span>-->
+                        <!--<span class="dtl">详情</span>-->
+                    <!--</span>-->
+                <!--</div>-->
+            </div>
+            <div class="task-detail-mask"></div>
+            <div class="task-detail">
+                <!--<div class="content">下午去买菜</div>-->
+                <!--<div>-->
+                    <!--<div class="desc input-item">-->
+                        <!--<textarea rows="3" cols="30" id=""></textarea>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="remind">-->
+                    <!--<input type="date">-->
+                <!--</div>-->
+            </div>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/store/store.js"></script>
+        <script src="bower_components/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+        <video src="alert.mp3" class="sound"></video>
+        <script src="js/todo.js"></script>
+    </body>
+</html>

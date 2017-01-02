@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    /*    粘滞感*/
+    -webkit-transition: background 200ms;
+    -moz-transition: background 200ms;
+    -ms-transition: background 200ms;
+    -o-transition: background 200ms;
+    transition: background 200ms;
+    /*    消除蓝边*/
+    outline: 0;
+}
+
+body{
+    background: #00334b;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    position:relative;
+    overflow:hidden;
+}
+
+/*提醒部分*/
+.msg{
+    width: 90%;
+    margin:0 auto;
+    height:70px;
+    background: yellowgreen;
+    text-align: center;
+    display: none;
+}
+
+.msg button{
+
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+.task-list{
+    margin: 10px 0;
+}
+
+/*圆角*/
+input,.task-item,
+button,
+.task-detail-mask,
+textarea,
+.msg
+{
+    border-radius: 3px;
+    padding: 10px;
+}
+
+button{
+    display: inline-block;
+    cursor: pointer;
+    color: #333;
+}
+
+.add-task input[type=text]{
+    float: left;
+    width: 84%;
+    margin-right: 1%;
+}
+
+button,textarea,input[type=text],input.date{
+    border:0;
+}
+
+.add-task button[type=submit]{
+    background: #46b1e4;
+    width: 15%;
+}
+
+.add-task button[type=submit]:hover{
+    background:#6fb9e4;
+}
+
+.add-task button[type=submit],.task-item{
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+input[type=text],input.date,textarea{
+    width: 100%;
+}
+
+input[type=text],input.date,textarea{
+    display: block;
+    background: #ddd;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.3)
+}
+
+textarea{
+    min-height: 40px;
+}
+
+input[type=text]:hover,input.date:hover,
+input[type=text]:focus,input.date:focus,
+textarea:hover,textarea:focus{
+    background: #fff;
+}
+
+.task-item{
+    padding: 10px;
+    background: #fff;
+    color:#333;
+    margin-bottom:2px;
+    border-radius:3px;
+    cursor: pointer;
+}
+
+.task-item:hover{
+    background: #ddd;
+}
+.task-item.completed{
+    color: #bbb;
+    opacity: 0.4;
+}
+
+.completed .task-content{
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.task-item input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.task-item .action{
+    float: right;
+    font-size: 90%;
+    color: #999;
+}
+.task-item .action span{
+    padding-right: 6px;
+}
+
+.task-detail,.task-detail-mask{
+    position: absolute;
+}
+
+.task-detail{
+    background: #fff;
+    bottom: 0px;
+    right:0px;
+    padding:10px;
+    width: 50%;
+    height: 100%;
+    color: #333;
+    display: none;
+}
+
+.task-detail .content{
+    font-weight: 900;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task-detail .modify{
+    display: none;
+}
+
+.task-detail .input-item{
+    margin-bottom: 10px;
+}
+
+/*将母元素遮罩*/
+.task-detail-mask{
+    position: fixed;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background: rgba(30,30,30,.6);
+    display: none;
+}
